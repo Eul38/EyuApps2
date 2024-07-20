@@ -1,0 +1,172 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #ffffff;
+    
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1e90ff;
+}
+
+#hero {
+    background: url('https://images.unsplash.com/photo-1542751110-97427bbecf20') no-repeat center center/cover; /* Relevant background image */
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 20px;
+    margin-top: 60px;
+    background-blend-mode: multiply;
+    animation: backgroundZoom 10s infinite alternate ease-in-out;
+}
+
+#hero h2 {
+    font-size: 3.5em;
+    margin: 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+#hero p {
+    font-size: 1.5em;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#apps {
+    padding: 60px 20px;
+}
+
+.category {
+    margin-bottom: 50px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.category h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1e90ff;
+    display: inline-block;
+}
+
+.app-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    width: calc(30% - 40px);
+    vertical-align: top;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.app-card img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.app-card h4 {
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.app-card p {
+    color: #666;
+}
+
+.app-card .download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.app-card .download-btn:hover {
+    background-color: #1c86ee;
+}
+
+.app-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes backgroundZoom {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 110%;
+    }
+}
