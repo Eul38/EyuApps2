@@ -170,3 +170,63 @@ footer {
         background-size: 110%;
     }
 }
+/* Existing styles... */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero {
+        padding: 50px 20px;
+    }
+
+    .app-card {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .app-card img {
+        max-width: 100px;
+    }
+
+    .app-card .download-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .category h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    #hero h2 {
+        font-size: 1.8em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .category h3 {
+        font-size: 1.2em;
+    }
+
+    .app-card h4 {
+        font-size: 1em;
+    }
+}
+
